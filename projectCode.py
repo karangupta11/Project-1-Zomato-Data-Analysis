@@ -90,7 +90,10 @@ PopularCusines= Cusines.sort_values(['Number of Resturants'],ascending=False).he
 #India analysis by taking data for India only
 ind= pd.read_csv("C:/Users/Karan Gupta/Desktop/zomato/India.csv", encoding = "ISO-8859-1")
 
+#Taking specific columns
 India = pd.DataFrame(ind, columns=['Restaurant Name','City','Cuisines','Average Cost for two', 'Currency', 'Has Online delivery', 'Is delivering now', 'Has Table booking',  'Price range', 'Aggregate rating', 'Rating text', 'Votes', 'Longitude', 'Latitude'])
+
+#Renaming the columns
 India.columns= ['Restaurant_Name','City','Cuisines','Average_Cost_for_two', 'Currency', 'Has_Online_delivery', 'Is_delivering_now', 'Has_Table_booking',  'Price_range', 'Aggregate_rating', 'Rating_text', 'Votes', 'Longitude', 'Latitude']
 
 # Which cities have the costliest food in India?
