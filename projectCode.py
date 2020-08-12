@@ -5,10 +5,10 @@ import seaborn as sns
 %matplotlib inline
 
 # importing the data
-proj= pd.read_csv("C:/Users/Romil Godha/Desktop/zomato/zomato.csv", encoding = "ISO-8859-1")
+proj= pd.read_csv("C:/Users/Karan Gupta /Desktop/zomato/zomato.csv", encoding = "ISO-8859-1")
 
 # Merging a dataset with country code file
-Country = pd.read_excel('C:/Users/Romil Godha/Desktop/zomato/Country-Code.xlsx')
+Country = pd.read_excel('C:/Users/Karan Gupta/Desktop/zomato/Country-Code.xlsx')
 merger = pd.merge(proj, Country,on='Country Code')
 
   
