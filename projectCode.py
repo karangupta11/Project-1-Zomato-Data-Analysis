@@ -11,7 +11,7 @@ proj= pd.read_csv("C:/Users/Karan Gupta /Desktop/zomato/zomato.csv", encoding = 
 Country = pd.read_excel('C:/Users/Karan Gupta/Desktop/zomato/Country-Code.xlsx')
 merger = pd.merge(proj, Country,on='Country Code')
 
-  
+
 # printing the rows and columns number
 print('Number of rows and columns:', proj.shape )
 
@@ -88,7 +88,7 @@ Cusines['Mean Rating']=(proj_sub.groupby(['Cuisines'], as_index=False)['Aggregat
 PopularCusines= Cusines.sort_values(['Number of Resturants'],ascending=False).head(10)
 
 #India analysis by taking data for India only
-ind= pd.read_csv("C:/Users/Romil Godha/Desktop/zomato/India.csv", encoding = "ISO-8859-1")
+ind= pd.read_csv("C:/Users/Karan Gupta/Desktop/zomato/India.csv", encoding = "ISO-8859-1")
 
 India = pd.DataFrame(ind, columns=['Restaurant Name','City','Cuisines','Average Cost for two', 'Currency', 'Has Online delivery', 'Is delivering now', 'Has Table booking',  'Price range', 'Aggregate rating', 'Rating text', 'Votes', 'Longitude', 'Latitude'])
 India.columns= ['Restaurant_Name','City','Cuisines','Average_Cost_for_two', 'Currency', 'Has_Online_delivery', 'Is_delivering_now', 'Has_Table_booking',  'Price_range', 'Aggregate_rating', 'Rating_text', 'Votes', 'Longitude', 'Latitude']
